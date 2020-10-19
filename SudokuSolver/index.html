@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver: By Mohit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="sudoku.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logos">
+                <p class="logo"><a href="index.html">Sudoku-Solver.com</a></p>
+                <span>By Mohit Yadav</span>
+            </div>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="main">
+                <div class="full-sudoku">
+                    <div class="sudoku">
+                        <table>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                            <tr>
+                                <br>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                                    <td><input type="text" class="sud-box" maxlength="1" style=""></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="rest-dad">
+                    <div class="rest">
+                        <h1>Sudoku</h1>
+                        <h2>.solve()</h3>
+                        <button style="transform-style: flat; text-transform: uppercase;" onclick="doit()">Solve</button>
+                    </div>
+                </div>
+                <div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
